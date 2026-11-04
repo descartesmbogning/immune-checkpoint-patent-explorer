@@ -1,0 +1,27 @@
+code,name,region,iso3,office_type
+AU,Australia,Oceania,AUS,National office
+CA,Canada,North America,CAN,National office
+CN,China,Asia,CHN,National office
+CR,Costa Rica,North America,CRI,National office
+EA,Eurasian Patent Org.,Eurasia,,Regional office
+EP,EPO,Europe,,Regional office
+GB,United Kingdom,Europe,GBR,National office
+GE,Georgia,Europe,GEO,National office
+JO,Jordan,Asia,JOR,National office
+JP,Japan,Asia,JPN,National office
+KR,South Korea,Asia,KOR,National office
+LU,Luxembourg,Europe,LUX,National office
+MA,Morocco,Africa,MAR,National office
+MX,Mexico,North America,MEX,National office
+MY,Malaysia,Asia,MYS,National office
+NL,Netherlands,Europe,NLD,National office
+NZ,New Zealand,Oceania,NZL,National office
+PH,Philippines,Asia,PHL,National office
+RU,Russia,Europe,RUS,National office
+SE,Sweden,Europe,SWE,National office
+SG,Singapore,Asia,SGP,National office
+TW,Taiwan,Asia,TWN,National office
+UA,Ukraine,Europe,UKR,National office
+US,United States,North America,USA,National office
+WO,WIPO,International,,International (PCT)
+ZA,South Africa,Africa,ZAF,National office

@@ -1,0 +1,35 @@
+country,region,iso3
+Australia,Oceania,AUS
+Austria,Europe,AUT
+Belgium,Europe,BEL
+Bulgaria,Europe,BGR
+Canada,North America,CAN
+China,Asia,CHN
+Cyprus,Europe,CYP
+Czech Republic,Europe,CZE
+Denmark,Europe,DNK
+Finland,Europe,FIN
+France,Europe,FRA
+Germany,Europe,DEU
+India,Asia,IND
+Iran,Asia,IRN
+Ireland,Europe,IRL
+Israel,Asia,ISR
+Italy,Europe,ITA
+Japan,Asia,JPN
+Luxembourg,Europe,LUX
+Macau,Asia,MAC
+Malaysia,Asia,MYS
+Netherlands,Europe,NLD
+Norway,Europe,NOR
+Portugal,Europe,PRT
+Russia,Europe,RUS
+Singapore,Asia,SGP
+South Korea,Asia,KOR
+Spain,Europe,ESP
+Sweden,Europe,SWE
+Switzerland,Europe,CHE
+Taiwan,Asia,TWN
+Turkey,Europe,TUR
+United Kingdom,Europe,GBR
+United States,North America,USA
