@@ -1,0 +1,408 @@
+{
+  "n_documents": 3320,
+  "n_with_country": 3226,
+  "n_cn": 1158,
+  "n_us": 1304,
+  "n_cn_and_us": 12,
+  "china_share_checks": [
+    {
+      "check": "All documents",
+      "early_pct": 21.6,
+      "early_ci": "16.8\u201327.3",
+      "early_n": 236.0,
+      "late_pct": 39.1,
+      "late_ci": "36.2\u201341.9",
+      "late_n": 1119.0,
+      "ratio": 1.81,
+      "p_value": 3.923988467371443e-07
+    },
+    {
+      "check": "Outside the Chinese patent office",
+      "early_pct": 9.1,
+      "early_ci": "5.8\u201314.1",
+      "early_n": 186.0,
+      "late_pct": 17.7,
+      "late_ci": "15.1\u201320.7",
+      "late_n": 717.0,
+      "ratio": 1.95,
+      "p_value": 0.004431685695346283
+    },
+    {
+      "check": "International (PCT) filings only",
+      "early_pct": 14.0,
+      "early_ci": "7.3\u201325.3",
+      "early_n": 57.0,
+      "late_pct": 24.4,
+      "late_ci": "19.6\u201330.0",
+      "late_n": 258.0,
+      "ratio": 1.74,
+      "p_value": 0.08951863945589056
+    },
+    {
+      "check": "Documents with a known applicant country",
+      "early_pct": 22.2,
+      "early_ci": "17.3\u201328.0",
+      "early_n": 230.0,
+      "late_pct": 40.3,
+      "late_ci": "37.4\u201343.2",
+      "late_n": 1085.0,
+      "ratio": 1.82,
+      "p_value": 2.443007037326758e-07
+    },
+    {
+      "check": "By earliest priority year",
+      "early_pct": 17.0,
+      "early_ci": "13.7\u201320.8",
+      "early_n": 430.0,
+      "late_pct": 40.9,
+      "late_ci": "38.0\u201343.9",
+      "late_n": 1078.0,
+      "ratio": 2.41,
+      "p_value": 8.575439878055517e-19
+    },
+    {
+      "check": "Fractional counting (share of applicant-country links)",
+      "early_pct": 21.5,
+      "early_ci": "",
+      "early_n": NaN,
+      "late_pct": 39.9,
+      "late_ci": "",
+      "late_n": NaN,
+      "ratio": 1.86,
+      "p_value": NaN
+    }
+  ],
+  "us_share": {
+    "early": {
+      "k": 120,
+      "n": 236,
+      "pct": 50.8,
+      "lo": 44.5,
+      "hi": 57.2
+    },
+    "late": {
+      "k": 396,
+      "n": 1119,
+      "pct": 35.4,
+      "lo": 32.6,
+      "hi": 38.2
+    }
+  },
+  "filing_route": [
+    {
+      "group": "China",
+      "office": "Chinese office",
+      "k": 547,
+      "n": 780,
+      "pct": 70.1,
+      "lo": 66.8,
+      "hi": 73.2
+    },
+    {
+      "group": "China",
+      "office": "International (PCT)",
+      "k": 105,
+      "n": 780,
+      "pct": 13.5,
+      "lo": 11.2,
+      "hi": 16.0
+    },
+    {
+      "group": "China",
+      "office": "US office",
+      "k": 51,
+      "n": 780,
+      "pct": 6.5,
+      "lo": 5.0,
+      "hi": 8.5
+    },
+    {
+      "group": "China",
+      "office": "Other offices",
+      "k": 77,
+      "n": 780,
+      "pct": 9.9,
+      "lo": 8.0,
+      "hi": 12.2
+    },
+    {
+      "group": "United States",
+      "office": "Chinese office",
+      "k": 86,
+      "n": 962,
+      "pct": 8.9,
+      "lo": 7.3,
+      "hi": 10.9
+    },
+    {
+      "group": "United States",
+      "office": "International (PCT)",
+      "k": 259,
+      "n": 962,
+      "pct": 26.9,
+      "lo": 24.2,
+      "hi": 29.8
+    },
+    {
+      "group": "United States",
+      "office": "US office",
+      "k": 338,
+      "n": 962,
+      "pct": 35.1,
+      "lo": 32.2,
+      "hi": 38.2
+    },
+    {
+      "group": "United States",
+      "office": "Other offices",
+      "k": 279,
+      "n": 962,
+      "pct": 29.0,
+      "lo": 26.2,
+      "hi": 31.9
+    },
+    {
+      "group": "Other countries",
+      "office": "Chinese office",
+      "k": 65,
+      "n": 589,
+      "pct": 11.0,
+      "lo": 8.8,
+      "hi": 13.8
+    },
+    {
+      "group": "Other countries",
+      "office": "International (PCT)",
+      "k": 147,
+      "n": 589,
+      "pct": 25.0,
+      "lo": 21.6,
+      "hi": 28.6
+    },
+    {
+      "group": "Other countries",
+      "office": "US office",
+      "k": 131,
+      "n": 589,
+      "pct": 22.2,
+      "lo": 19.1,
+      "hi": 25.8
+    },
+    {
+      "group": "Other countries",
+      "office": "Other offices",
+      "k": 246,
+      "n": 589,
+      "pct": 41.8,
+      "lo": 37.8,
+      "hi": 45.8
+    }
+  ],
+  "granted_by_group": {
+    "China": 36.4,
+    "United States": 18.0,
+    "Other countries": 20.4
+  },
+  "granted_cn_office_vs_us_office": {
+    "CN office": 36.8,
+    "US office": 34.8
+  },
+  "what_is_protected": [
+    {
+      "label": "PD-1",
+      "china_pct": 55.5,
+      "china_ci": "52.0\u201359.0",
+      "us_pct": 42.9,
+      "us_ci": "39.8\u201346.1",
+      "diff_pp": 12.6,
+      "p_value": 1.7457054020627196e-07
+    },
+    {
+      "label": "PD-L1",
+      "china_pct": 44.6,
+      "china_ci": "41.2\u201348.1",
+      "us_pct": 30.5,
+      "us_ci": "27.6\u201333.4",
+      "diff_pp": 14.2,
+      "p_value": 1.1074514169574298e-09
+    },
+    {
+      "label": "CTLA-4",
+      "china_pct": 8.7,
+      "china_ci": "6.9\u201310.9",
+      "us_pct": 14.6,
+      "us_ci": "12.5\u201316.9",
+      "diff_pp": -5.8,
+      "p_value": 0.0001879095218495418
+    },
+    {
+      "label": "LAG-3, TIM-3 or TIGIT",
+      "china_pct": 2.6,
+      "china_ci": "1.7\u20133.9",
+      "us_pct": 4.7,
+      "us_ci": "3.5\u20136.2",
+      "diff_pp": -2.1,
+      "p_value": 0.020636799878068168
+    },
+    {
+      "label": "Combination therapy",
+      "china_pct": 33.5,
+      "china_ci": "30.2\u201336.8",
+      "us_pct": 53.8,
+      "us_ci": "50.7\u201357.0",
+      "diff_pp": -20.4,
+      "p_value": 1.754090640934059e-17
+    },
+    {
+      "label": "Bispecific / multispecific",
+      "china_pct": 10.6,
+      "china_ci": "8.7\u201313.0",
+      "us_pct": 4.2,
+      "us_ci": "3.1\u20135.6",
+      "diff_pp": 6.5,
+      "p_value": 1.5010433514365126e-07
+    },
+    {
+      "label": "Biomarker / diagnostic",
+      "china_pct": 10.0,
+      "china_ci": "8.1\u201312.3",
+      "us_pct": 7.9,
+      "us_ci": "6.4\u20139.8",
+      "diff_pp": 2.1,
+      "p_value": 0.12474804269656009
+    },
+    {
+      "label": "Cell therapy",
+      "china_pct": 2.8,
+      "china_ci": "1.9\u20134.2",
+      "us_pct": 4.0,
+      "us_ci": "2.9\u20135.4",
+      "diff_pp": -1.1,
+      "p_value": 0.1985974765297559
+    },
+    {
+      "label": "Formulation / delivery",
+      "china_pct": 3.6,
+      "china_ci": "2.5\u20135.1",
+      "us_pct": 6.2,
+      "us_ci": "4.9\u20137.9",
+      "diff_pp": -2.6,
+      "p_value": 0.012118006198565812
+    },
+    {
+      "label": "Small molecule",
+      "china_pct": 6.5,
+      "china_ci": "5.0\u20138.5",
+      "us_pct": 2.7,
+      "us_ci": "1.9\u20133.9",
+      "diff_pp": 3.8,
+      "p_value": 0.00010746358382722909
+    }
+  ],
+  "groups_n": {
+    "China": 780,
+    "United States": 962,
+    "Other countries": 589
+  },
+  "applicants": {
+    "China": {
+      "academic_pct": 32.4,
+      "top10_share_pct": 20.5,
+      "top10": [
+        {
+          "name": "Jiangsu Hengrui Medicine Co. Ltd.",
+          "docs": 32
+        },
+        {
+          "name": "Chia Tai Tianqing Pharmaceutical Group Co. Ltd.",
+          "docs": 23
+        },
+        {
+          "name": "Innovent Biologics (Suzhou) Co. Ltd.",
+          "docs": 16
+        },
+        {
+          "name": "Suzhou Shengdiya Biological Medicine Co. Ltd.",
+          "docs": 15
+        },
+        {
+          "name": "University of China Pharma",
+          "docs": 14
+        },
+        {
+          "name": "Wuxi Biologics (Shanghai) Co. Ltd.",
+          "docs": 13
+        },
+        {
+          "name": "Shanghai Hengrui Pharmaceutical Co. Ltd.",
+          "docs": 13
+        },
+        {
+          "name": "Suzhou Suncadia Biopharmaceuticals Co. Ltd.",
+          "docs": 12
+        },
+        {
+          "name": "Shanghai Junshi Bioscience Co Ltd",
+          "docs": 12
+        },
+        {
+          "name": "University of Qinghai Nationalities",
+          "docs": 10
+        }
+      ],
+      "n_orgs": 450
+    },
+    "United States": {
+      "academic_pct": 32.4,
+      "top10_share_pct": 33.8,
+      "top10": [
+        {
+          "name": "Bristol Myers Squibb Co.",
+          "docs": 78
+        },
+        {
+          "name": "Genentech Inc.",
+          "docs": 40
+        },
+        {
+          "name": "Merck Sharp & Dohme Corp.",
+          "docs": 38
+        },
+        {
+          "name": "University of Texas",
+          "docs": 37
+        },
+        {
+          "name": "Dana-Farber Cancer Institute Inc.",
+          "docs": 26
+        },
+        {
+          "name": "University of California",
+          "docs": 26
+        },
+        {
+          "name": "Memorial Sloan Kettering Cancer Center",
+          "docs": 24
+        },
+        {
+          "name": "Regeneron Pharmaceuticals Inc.",
+          "docs": 20
+        },
+        {
+          "name": "Pfizer",
+          "docs": 19
+        },
+        {
+          "name": "Johns Hopkins University",
+          "docs": 17
+        }
+      ],
+      "n_orgs": 390
+    }
+  },
+  "science_links": {
+    "China": 54.2,
+    "United States": 42.8,
+    "Other countries": 45.8
+  }
+}

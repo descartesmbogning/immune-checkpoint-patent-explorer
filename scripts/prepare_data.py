@@ -34,7 +34,9 @@ TARGETS = {
     "Other checkpoint": r"\bvista\b|\bb7-?h3\b|\bcd47\b|\bnkg2a\b|\bido1?\b|\bcd73\b|\ba2ar\b|\bsiglec-?15\b|\bbtla\b",
 }
 STRATEGIES = {
-    "Combination therapy": r"\bcombination|\bcombined with|\bin combination|co-?administ",
+    # includes phrasing common in machine-translated Chinese abstracts ("combined for use", "synergistic")
+    "Combination therapy": r"\bcombination|\bcombined (?:with|for|use|administration|application|treatment)|\bin combination"
+                           r"|co-?administ|joint(?:ly)? (?:use|administ)|synergi|in conjunction with|used together",
     "Bispecific / multispecific": r"bi-?specific|multi-?specific|tri-?specific|bifunctional",
     "Formulation / delivery": r"formulation|subcutaneous|dosage form|dosing regimen|lyophili|sustained release|nanoparticle",
     "Biomarker / diagnostic": r"biomarker|predict(?:ing|ive|s)? (?:the )?response|companion diagnostic|\bdiagnos",

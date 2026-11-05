@@ -59,7 +59,7 @@ python scripts/prepare_data.py
 
 ## Methods in brief
 
-- Target and strategy labels are keyword flags on titles and abstracts; a document can carry several.
+- Target and strategy labels are keyword flags on titles and abstracts; a document can carry several. The combination rule includes phrasing common in machine-translated Chinese abstracts ("combined for use", "synergistic").
 - Applicant country and type come from the cleaned 2024 applicant table; hospitals, universities and
   institutes that were labelled commercial are moved to academic / research.
 - Activity classes (continuant, newcomer, terminator, transient) compare each entity's first and last

@@ -1,0 +1,13 @@
+group,office,k,n,pct,lo,hi
+China,Chinese office,547,780,70.1,66.8,73.2
+China,International (PCT),105,780,13.5,11.2,16.0
+China,US office,51,780,6.5,5.0,8.5
+China,Other offices,77,780,9.9,8.0,12.2
+United States,Chinese office,86,962,8.9,7.3,10.9
+United States,International (PCT),259,962,26.9,24.2,29.8
+United States,US office,338,962,35.1,32.2,38.2
+United States,Other offices,279,962,29.0,26.2,31.9
+Other countries,Chinese office,65,589,11.0,8.8,13.8
+Other countries,International (PCT),147,589,25.0,21.6,28.6
+Other countries,US office,131,589,22.2,19.1,25.8
+Other countries,Other offices,246,589,41.8,37.8,45.8

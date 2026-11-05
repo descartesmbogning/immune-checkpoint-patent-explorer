@@ -1,0 +1,7 @@
+check,early_pct,early_ci,early_n,late_pct,late_ci,late_n,ratio,p_value
+All documents,21.6,16.8–27.3,236.0,39.1,36.2–41.9,1119.0,1.81,3.923988467371443e-07
+Outside the Chinese patent office,9.1,5.8–14.1,186.0,17.7,15.1–20.7,717.0,1.95,0.004431685695346283
+International (PCT) filings only,14.0,7.3–25.3,57.0,24.4,19.6–30.0,258.0,1.74,0.08951863945589056
+Documents with a known applicant country,22.2,17.3–28.0,230.0,40.3,37.4–43.2,1085.0,1.82,2.443007037326758e-07
+By earliest priority year,17.0,13.7–20.8,430.0,40.9,38.0–43.9,1078.0,2.41,8.575439878055517e-19
+Fractional counting (share of applicant-country links),21.5,,,39.9,,,1.86,
