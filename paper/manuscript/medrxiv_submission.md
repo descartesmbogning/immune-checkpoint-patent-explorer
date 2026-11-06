@@ -38,9 +38,12 @@ Everything the medRxiv form asks for, ready to paste. Submit at https://submit.m
 3. Confirm the correspondence e-mail (currently cognosxx@gmail.com).
 4. After posting, add the medRxiv DOI to the explorer's About section and to the repository README.
 
-## Rebuild
+## Rebuild and verify
 
 ```bash
+python scripts/prepare_data.py          # raw Lens export -> processed tables
 python scripts/paper_analysis.py      # numbers, tables, figures
+python scripts/label_check_agreement.py   # Supplementary Table S3
+python scripts/verify_paper.py        # independent recomputation; writes paper/verification_report.md
 python scripts/build_manuscript.py    # Word + PDF of manuscript and supplement
 ```

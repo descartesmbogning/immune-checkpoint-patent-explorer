@@ -94,3 +94,17 @@ checkpoint therapy patents, 2010–2023*:
 - `paper/manuscript/medrxiv_submission.md`: answers for the medRxiv form
 - `scripts/paper_analysis.py`: every number, table and figure; `scripts/build_manuscript.py`: builds the files
 - `paper/label_check_200_coded.xlsx`: hand-coded validation sample (Table S3)
+
+### Reproduce and verify the paper
+
+```bash
+python scripts/prepare_data.py            # raw Lens.org export -> data/processed/
+python scripts/paper_analysis.py          # every number, table and figure -> paper/
+python scripts/label_check_agreement.py   # Supplementary Table S3 from the coded sample
+python scripts/verify_paper.py            # independent recomputation from the raw export + text audit
+python scripts/build_manuscript.py        # Word and PDF files for medRxiv
+```
+
+`data/raw/lens_export_2024-01-28.csv.gz` is the cleaned export from the 2024 analysis (identical to
+`full_data_table.csv` in the 2024 dashboard repositories). The 2024 notebook read 3,439 Lens.org records,
+dropped 61 without title or abstract and 58 with duplicated title and abstract, leaving 3,320.

@@ -46,7 +46,7 @@ All results can be explored further, by year, target, strategy and applicant typ
 
 ## Data
 
-We searched Lens.org [19] on 28 January 2024 for patent documents that mention approved or investigational checkpoint inhibitors (for example pembrolizumab, nivolumab, ipilimumab, atezolizumab, camrelizumab, tislelizumab, toripalimab), checkpoint inhibitor terms ("immune checkpoint inhibitor", "anti-PD-1", "anti-PD-L1", "anti-CTLA-4") or brand names (for example Keytruda, Opdivo, Yervoy). The full query is in Supplementary Table S1. After cleaning, the dataset holds 3,320 documents with application years 1997–2023. The export contains about one document per patent family (3,262 distinct first priority filings). We cleaned applicant names, assigned each applicant a country and a type (commercial, academic or research, individual, government), and grouped legal status into granted or in force, pending, discontinued or expired, and other.
+We searched Lens.org [19] on 28 January 2024 for patent documents that mention approved or investigational checkpoint inhibitors (for example pembrolizumab, nivolumab, ipilimumab, atezolizumab, camrelizumab, tislelizumab, toripalimab), checkpoint inhibitor terms ("immune checkpoint inhibitor", "anti-PD-1", "anti-PD-L1", "anti-CTLA-4") or brand names (for example Keytruda, Opdivo, Yervoy). The full query is in Supplementary Table S1. The search returned 3,439 documents. We removed 61 without a title or abstract and 58 whose title and abstract repeated those of another document, leaving 3,320 documents with application years 1997–2023. The export contains about one document per patent family (3,262 distinct first priority filings). We cleaned applicant names, assigned each applicant a country and a type (commercial, academic or research, individual, government), and grouped legal status into granted or in force, pending, discontinued or expired, and other.
 
 ## Measures
 
@@ -77,11 +77,11 @@ Table: **Table 1. China's share of immune checkpoint patent documents, 2015–16
 | Check | 2015–16, % (95% CI), n | 2020–21, % (95% CI), n | Ratio | p |
 |:--|:--|:--|--:|--:|
 | All documents (main) | 21.6 (16.8–27.3), 236 | 39.1 (36.2–41.9), 1,119 | 1.81 | <0.001 |
-| Outside the Chinese office | 9.1 (5.8–14.1), 186 | 17.7 (15.1–20.7), 717 | 1.95 | 0.004 |
+| Outside the Chinese office | 9.1 (5.8–14.1), 186 | 17.7 (15.1–20.7), 717 | 1.94 | 0.004 |
 | International (PCT) filings only | 14.0 (7.3–25.3), 57 | 24.4 (19.6–30.0), 258 | 1.74 | 0.09 |
 | Known applicant country only | 22.2 (17.3–28.0), 230 | 40.3 (37.4–43.2), 1,085 | 1.82 | <0.001 |
 | By earliest priority year | 17.0 (13.7–20.8), 430 | 40.9 (38.0–43.9), 1,078 | 2.41 | <0.001 |
-| Fractional counting | 21.5 | 39.9 | 1.86 | – |
+| Fractional counting | 21.5 | 39.9 | 1.85 | – |
 
 ## Chinese applicants file mostly at home
 

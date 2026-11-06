@@ -72,9 +72,10 @@ def main() -> None:
     # fractional count: China's share of applicant-country links
     links = c.merge(p[["lens_id", "year", "jurisdiction"]], on="lens_id")
     links["w"] = 1 / links.groupby("lens_id").lens_id.transform("size")
-    def frac(years):
+    def frac(years, digits=1):
         sub = links[links.year.between(*years)]
-        return round(100 * sub.loc[sub.country == "China", "w"].sum() / sub.lens_id.nunique(), 1)
+        v = 100 * sub.loc[sub.country == "China", "w"].sum() / sub.lens_id.nunique()
+        return round(v, digits) if digits is not None else v
 
     checks = {
         "All documents": (p, "year"),
@@ -88,11 +89,11 @@ def main() -> None:
         e, l = share(df, years=EARLY, ycol=ycol), share(df, years=LATE, ycol=ycol)
         rows.append({"check": name, "early_pct": e["pct"], "early_ci": f"{e['lo']}–{e['hi']}", "early_n": e["n"],
                      "late_pct": l["pct"], "late_ci": f"{l['lo']}–{l['hi']}", "late_n": l["n"],
-                     "ratio": round(l["pct"] / e["pct"], 2) if e["pct"] else None,
+                     "ratio": round((l["k"] / l["n"]) / (e["k"] / e["n"]), 2) if e["k"] else None,  # from unrounded shares
                      "p_value": two_prop_p(e["k"], e["n"], l["k"], l["n"])})
     rows.append({"check": "Fractional counting (share of applicant-country links)", "early_pct": frac(EARLY),
                  "early_ci": "", "early_n": None, "late_pct": frac(LATE), "late_ci": "", "late_n": None,
-                 "ratio": round(frac(LATE) / frac(EARLY), 2), "p_value": None})
+                 "ratio": round(frac(LATE, None) / frac(EARLY, None), 2), "p_value": None})
     t1 = pd.DataFrame(rows)
     t1.to_csv(OUT / "tables" / "table1_china_share_checks.csv", index=False)
     R["china_share_checks"] = t1.to_dict("records")
