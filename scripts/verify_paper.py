@@ -273,7 +273,7 @@ lines = ["# Verification report", "",
          f"**{int(rep.ok.sum())} of {len(rep)} checks passed.**", "",
          "| # | Check | Recomputed value | Where | Result |", "|--:|:--|:--|:--|:--|"]
 for i, x in rep.reset_index(drop=True).iterrows():
-    lines.append(f"| {i+1} | {x.check} | {str(x.recomputed).replace('|', '/')} | {x.where} | {'pass' if x.ok else '**FAIL** (expected: ' + str(x['expected text']).replace('|', '/') + ')'} |")
+    lines.append(f"| {i+1} | {x.check} | {str(x.recomputed).replace('|', '/')} | {x["where"]} | {'pass' if x.ok else '**FAIL** (expected: ' + str(x['expected text']).replace('|', '/') + ')'} |")
 (PAPER / "verification_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print(f"{int(rep.ok.sum())}/{len(rep)} checks passed")
 if len(fails):
