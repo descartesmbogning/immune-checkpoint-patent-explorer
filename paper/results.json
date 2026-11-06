@@ -203,6 +203,30 @@
     "United States": 18.0,
     "Other countries": 20.4
   },
+  "family_size": {
+    "China": {
+      "median": 2.0,
+      "q1": 1.0,
+      "q3": 4.0,
+      "single_pct": 31.8,
+      "single_ci": "28.6\u201335.1"
+    },
+    "United States": {
+      "median": 7.0,
+      "q1": 3.0,
+      "q3": 13.0,
+      "single_pct": 12.5,
+      "single_ci": "10.5\u201314.7"
+    },
+    "Other countries": {
+      "median": 6.0,
+      "q1": 2.0,
+      "q3": 13.0,
+      "single_pct": 16.3,
+      "single_ci": "13.5\u201319.5"
+    }
+  },
+  "family_single_p": 8.91553667834278e-23,
   "granted_cn_office_vs_us_office": {
     "CN office": 36.8,
     "US office": 34.8
@@ -404,5 +428,18 @@
     "China": 54.2,
     "United States": 42.8,
     "Other countries": 45.8
+  },
+  "pd1_vegf_bispecific": {
+    "n": 21,
+    "china": 19,
+    "us": 1,
+    "first_year": 2019,
+    "by_year": {
+      "2019": 5,
+      "2020": 2,
+      "2021": 6,
+      "2022": 4,
+      "2023": 4
+    }
   }
 }

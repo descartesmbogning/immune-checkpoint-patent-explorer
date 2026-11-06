@@ -83,3 +83,14 @@ Full details are on the **About** page.
 Analysis and code: Maxime Descartes Mbogning Fonkou. The method follows the phage therapy patent
 landscape published in [Nature Biotechnology (2024)](https://doi.org/10.1038/s41587-024-02493-9).
 Patent data © Lens.org, used under its terms of use.
+
+## Preprint
+
+`paper/` holds the short paper built on this dataset, *Strong at home, going global: China's rise in immune
+checkpoint therapy patents, 2010–2023*:
+
+- `paper/manuscript/manuscript.md` and `supplementary.md`: the text (source of truth)
+- `paper/manuscript/build/`: Word and PDF files for medRxiv (figures and tables in the text)
+- `paper/manuscript/medrxiv_submission.md`: answers for the medRxiv form
+- `scripts/paper_analysis.py`: every number, table and figure; `scripts/build_manuscript.py`: builds the files
+- `paper/label_check_200_coded.xlsx`: hand-coded validation sample (Table S3)

@@ -132,6 +132,15 @@ def main() -> None:
     # granted share by office for context (grant speed differs by office)
     g = comp.assign(granted=comp.status == "Granted / in force")
     R["granted_by_group"] = {k: round(100 * v.status.eq("Granted / in force").mean(), 1) for k, v in groups.items()}
+    # geographic reach: simple family size (number of documents in the same simple patent family)
+    R["family_size"] = {}
+    for k, v in groups.items():
+        k1 = int((v.family_size == 1).sum()); s, lo, hi = wilson(k1, len(v))
+        R["family_size"][k] = {"median": float(v.family_size.median()), "q1": float(v.family_size.quantile(.25)),
+                               "q3": float(v.family_size.quantile(.75)), "single_pct": round(s, 1),
+                               "single_ci": f"{lo:.1f}–{hi:.1f}"}
+    R["family_single_p"] = two_prop_p(int((groups["China"].family_size == 1).sum()), len(groups["China"]),
+                                      int((groups["United States"].family_size == 1).sum()), len(groups["United States"]))
     R["granted_cn_office_vs_us_office"] = {"CN office": round(100 * g[g.jurisdiction == "CN"].granted.mean(), 1),
                                            "US office": round(100 * g[g.jurisdiction == "US"].granted.mean(), 1)}
 
@@ -175,6 +184,13 @@ def main() -> None:
                               "top10": [{"name": n, "docs": int(v)} for n, v in top.items()],
                               "n_orgs": int(a[a.lens_id.isin(df.lens_id) & (a.country == k) & (a.type != "Individual")].applicant.nunique())}
     R["science_links"] = {k: round(100 * (v.npl_citations > 0).mean(), 1) for k, v in groups.items()}
+
+    # PD-(L)1 x VEGF bispecifics (the class of ivonescimab), all years
+    txt = (p.title + " " + p.abstract).str.lower()
+    pv = p[txt.str.contains(r"\bvegf") & p.strategies.str.contains("Bispecific") & p.targets.str.contains("PD-1|PD-L1")]
+    R["pd1_vegf_bispecific"] = {"n": len(pv), "china": int(pv.cn.sum()), "us": int(pv.us.sum()),
+                                "first_year": int(pv.year.min()), "by_year": {str(k): int(v) for k, v in pv.year.value_counts().sort_index().items()}}
+    pv[["lens_id", "year", "jurisdiction", "title", "cn", "us"]].to_csv(OUT / "tables" / "tableS5_pd1_vegf_bispecifics.csv", index=False)
 
     # ---------------------------------------------------------------- figures
     def fig1():
