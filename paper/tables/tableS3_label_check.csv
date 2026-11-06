@@ -1,0 +1,19 @@
+label,group,n,human_yes,rule_yes,agree,precision,recall,kappa
+PD-1,All,200,101,100,99.5,100.0,99.0,0.99
+PD-1,China,100,56,56,100.0,100.0,100.0,1.0
+PD-1,United States,100,45,44,99.0,100.0,97.8,0.98
+PD-L1,All,200,57,58,99.5,98.3,100.0,0.99
+PD-L1,China,100,35,35,100.0,100.0,100.0,1.0
+PD-L1,United States,100,22,23,99.0,95.7,100.0,0.97
+CTLA-4,All,200,28,28,100.0,100.0,100.0,1.0
+CTLA-4,China,100,14,14,100.0,100.0,100.0,1.0
+CTLA-4,United States,100,14,14,100.0,100.0,100.0,1.0
+LAG-3 / TIM-3 / TIGIT,All,200,6,7,99.5,85.7,100.0,0.92
+LAG-3 / TIM-3 / TIGIT,China,100,2,2,100.0,100.0,100.0,1.0
+LAG-3 / TIM-3 / TIGIT,United States,100,4,5,99.0,80.0,100.0,0.88
+Combination therapy,All,200,93,93,97.0,96.8,96.8,0.94
+Combination therapy,China,100,35,34,95.0,94.1,91.4,0.89
+Combination therapy,United States,100,58,59,99.0,98.3,100.0,0.98
+Bispecific / multispecific,All,200,17,18,99.5,94.4,100.0,0.97
+Bispecific / multispecific,China,100,11,11,100.0,100.0,100.0,1.0
+Bispecific / multispecific,United States,100,6,7,99.0,85.7,100.0,0.92
