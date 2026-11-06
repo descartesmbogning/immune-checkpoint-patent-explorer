@@ -28,13 +28,13 @@ Everything the medRxiv form asks for, ready to paste. Submit at https://submit.m
 - **Ethics:** Not applicable. The study used only publicly available patent records; it involved no human participants, patient data or intervention, so no ethics committee approval or consent was required. (On the form: tick that all relevant ethical guidelines were followed; answer "not applicable" to IRB approval and consent.)
 - **Clinical trial registration:** Not applicable (not a clinical trial).
 - **Reporting guidelines:** No EQUATOR guideline applies to patent landscape studies; all steps are reported in Methods, the supplement and the public code.
-- **Data availability:** All processed data and code are openly available at https://github.com/descartesmbogning/immune-checkpoint-patent-explorer (release `v1.0-preprint`). Interactive explorer: https://cognosx.ca/dashboards/immune-checkpoint.html. Raw patent records are available from Lens.org under its terms of use.
+- **Data availability:** All processed data and code are openly available at https://github.com/descartesmbogning/immune-checkpoint-patent-explorer (state of the repository at commit b26426a). Interactive explorer: https://cognosx.ca/dashboards/immune-checkpoint.html. Raw patent records are available from Lens.org under its terms of use.
 - **AI use:** An AI assistant (Claude, Anthropic) helped write analysis code and draft and edit text; the author checked all analyses and takes full responsibility.
 
 ## Before you press submit
 
 1. Read the PDF once end to end.
-2. Optional: connect the GitHub repository to Zenodo and create a DOI for release `v1.0-preprint`, then add the DOI to the data-availability statement and rebuild (`python scripts/build_manuscript.py`).
+2. Optional but recommended: on GitHub, create a release named `v1.0-preprint` from the current `main`, connect the repository to Zenodo to get a DOI for it, then add the DOI to the data-availability statement and rebuild (`python scripts/build_manuscript.py`).
 3. Confirm the correspondence e-mail (currently cognosxx@gmail.com).
 4. After posting, add the medRxiv DOI to the explorer's About section and to the repository README.
 
